@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/MainView"/>
+    <qresource prefix="/styles">
+        <file>style.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>app_icon.ico</file>
+    </qresource>
+</RCC>
