@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{10f1fec6-a267-46db-8d50-26d3d4637dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{01f54890-5706-4e78-bbb1-d10280d91043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{cdd45076-48b9-4873-980b-b7d0628a89b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{6585af07-5cb4-4e95-bce5-fcd8b2b22878}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="main_view.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="natural_language_processor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="code_generator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="converter.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="main_view.h">
+      <Filter>app</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="main_view.qrc">
+      <Filter>ui</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="main_view.ui">
+      <Filter>ui</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app_icon.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="style.qss">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="natural_language_processor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="code_generator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="converter.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
