@@ -4,6 +4,6 @@
         <file>style.qss</file>
     </qresource>
     <qresource prefix="/icons">
-        <file>app_icon.ico</file>
+        <file>app_icon.png</file>
     </qresource>
 </RCC>

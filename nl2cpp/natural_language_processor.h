@@ -16,7 +16,10 @@ enum class InstructionType {
     Output,
     FunctionDefinition,
     FunctionCall,
-    Unknown
+    Unknown,
+    FunctionDeclaration,
+    ProgramStart,
+    ProgramEnd
 };
 
 // Estructura para representar una instrucción procesada
@@ -24,6 +27,7 @@ struct Instruction {
     InstructionType type;
     QString keyword;
     QStringList arguments;
+    std::vector<Instruction> nested;
 };
 
 class NaturalLanguageProcessor
@@ -39,6 +43,10 @@ private:
     // Métodos auxiliares
     Instruction parseLine(const QString& line);
     InstructionType detectInstructionType(const QString& line);
+
+    std::vector<Instruction> parseUntil(const QStringList& lines, int& index, const QStringList& stopTokens);
+
+    std::vector<Instruction> parseBlock(const QStringList& lines, int& index);
 
     // Diccionarios de palabras clave
     std::map<QString, QString> arithmeticKeywords;

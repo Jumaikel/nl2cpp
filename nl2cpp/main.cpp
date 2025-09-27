@@ -24,8 +24,9 @@ int main(int argc, char* argv[])
 
     // 🔹 Crear ventana principal
     MainView window;
+	window.resize(1280, 720);
     window.setWindowTitle("Natural Language to C++ Converter");
-    window.setWindowIcon(QIcon(":/icons/app_icon.ico")); // opcional, si tienes ícono en resources
+    window.setWindowIcon(QIcon(":/icons/app_icon.png"));
     window.show();
 
     return app.exec();

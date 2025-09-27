@@ -50,9 +50,6 @@
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app_icon.ico">
-      <Filter>resources</Filter>
-    </None>
     <None Include="style.qss">
       <Filter>resources</Filter>
     </None>
@@ -70,5 +67,10 @@
     <ClInclude Include="converter.h">
       <Filter>core</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app_icon.png">
+      <Filter>resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>
